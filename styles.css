@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+.boton {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 20px 40px;
+  font-size: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.boton:hover,
+.boton:active {
+  transform: scale(1.1);
+  background-color: #fff;
+  color: #000;
+}
+
+.carta {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.carta.show {
+  display: block;
+  opacity: 1;
+}
+
+.contenido-carta h1 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.contenido-carta h2 {
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.contenido-carta p {
+  font-size: 16px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.boton-enlace {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.boton-enlace:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  display: flex;
+  justify-content: center;
+}
